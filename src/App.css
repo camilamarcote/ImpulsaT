@@ -1,0 +1,15 @@
+p {
+  text-align: justify;
+justify-content: center;
+}
+
+h1  {
+color: rgb(49, 112, 194);
+margin-bottom: 1em;
+}
+
+.btn-primary {
+color: rgb(255, 255, 255);
+background-color:rgb(73, 141, 228) ;
+}
+
