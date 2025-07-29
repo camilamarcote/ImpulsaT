@@ -13,3 +13,21 @@ justify-content: right;
 }
 
 
+/* Hace que el dropdown se abra al pasar el mouse */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; /* evita que se mueva */
+}
+
+/* Opcional: agrega una transición suave */
+.dropdown-menu {
+  transition: opacity 0.2s ease-in-out;
+  opacity: 0;
+  display: block;
+  visibility: hidden;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}

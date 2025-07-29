@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from '../images/logo.jpg';
+import './Navbar.css';
 
 function Navbar() {
   return (
@@ -12,7 +13,6 @@ function Navbar() {
             alt="Logo PsicoWeb"
             style={{ height: '40px', marginRight: '10px' }}
           />
-          PsicoWeb
         </Link>
         <button
           className="navbar-toggler"
@@ -32,11 +32,32 @@ function Navbar() {
                 Inicio
               </Link>
             </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/servicios">
+
+            <li className="nav-item dropdown">
+              <Link
+                className="nav-link dropdown-toggle no-arrow"
+                to="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
                 Servicios
               </Link>
+              <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <Link className="dropdown-item" to="/asesorias">
+                    Asesorías
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="/talleres">
+                    Talleres
+                  </Link>
+                </li>
+              </ul>
             </li>
+
             <li className="nav-item">
               <Link className="nav-link" to="/formulario">
                 Contacto

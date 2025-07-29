@@ -1,0 +1,4 @@
+/* Oculta la flecha del dropdown */
+.nav-link.dropdown-toggle::after {
+  display: none !important;
+}
