@@ -8,7 +8,10 @@ function Talleres() {
         Diseñamos talleres prácticos para fortalecer habilidades personales y profesionales, promover el bienestar emocional y fomentar la cohesión en equipos de trabajo.
       </p>
     </div>
+    
   );
+  
 }
+
 
 export default Talleres;
